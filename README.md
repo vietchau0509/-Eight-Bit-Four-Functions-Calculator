@@ -2,6 +2,8 @@
 Project Overview
 This project involves the design, implementation, and testing of an eight-bit calculator capable of performing four basic arithmetic functions - addition, subtraction, multiplication, and division. The project harnesses the power of FPGA (Field-Programmable Gate Array) technology, specifically using the DE10-Lite board, coupled with a keypad and optional HexBoard for input and output.
 
+This calculator is developed for the DE10-Lite board, equipped with a keypad and a HexBoard, and utilizes the Quartus Prime Lite Edition with the device model 10M50DAF484C7G.
+
 Purpose/Outcomes
 Objective: Design, implement, and test an eight-bit, four-function (Add, Subtract, Multiply, Divide)
 calculator using DE10-Lite + Keypad (+HexBoard).
@@ -11,13 +13,11 @@ sequential logic circuits using FPGAs and System Verilog HDL
 
 Design and Implementation
 The calculator is structured around four main components:
-
-Control Unit (CU): Coordinates the operations of the calculator.
-Arithmetic Unit (AU): Performs the core arithmetic operations.
-Input Unit (IU): Manages user input via a 4x4 keypad.
-Output Unit (OU): Displays results on the DE10-Lite's seven-segment displays.
-The project demonstrates extensive use of combinational and sequential logic circuits, utilizing System Verilog HDL for design and implementation.
-
+The calculator comprises four main components, each playing a crucial role in its functionality:
+Control Unit (CU): Manages the overall control logic, coordinating the operations of other units. It interprets user inputs and signals from the Input Unit to control the flow of data and operations.
+Arithmetic Unit (AU): Responsible for executing the arithmetic operations. It performs calculations based on the inputs and the operation selected by the Control Unit.
+Output Unit (OU): Handles the display of the results. It takes the computed data from the Arithmetic Unit and presents it in a human-readable format on the HexBoard's 7-segment displays.
+Input Unit (IU): Interfaces with the keypad, capturing user inputs such as numbers and operation commands, and relays this information to the Control Unit.
 Features and Functionalities
 Basic Operations: Addition, Subtraction, Multiplication, and Division.
 Input Method: Numeric inputs through a 4x4 CSE Keypad.
