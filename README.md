@@ -2,6 +2,13 @@
 Project Overview
 This project involves the design, implementation, and testing of an eight-bit calculator capable of performing four basic arithmetic functions - addition, subtraction, multiplication, and division. The project harnesses the power of FPGA (Field-Programmable Gate Array) technology, specifically using the DE10-Lite board, coupled with a keypad and optional HexBoard for input and output.
 
+Purpose/Outcomes
+Objective: Design, implement, and test an eight-bit, four-function (Add, Subtract, Multiply, Divide)
+calculator using DE10-Lite + Keypad (+HexBoard).
+Components: Control Unit (CU), Arithmetic Unit (AU), Output Unit (OU), Input Unit (IU).
+Skills Demonstrated: Design, implementation, and testing of a machine with combinational and
+sequential logic circuits using FPGAs and System Verilog HDL
+
 Design and Implementation
 The calculator is structured around four main components:
 
